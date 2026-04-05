@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const downloadBtn = document.getElementById('downloadBtn');
     const openWebBtn = document.getElementById('openWebBtn');
     const resetBtn = document.getElementById('resetBtn');
+    const aboutBtn = document.getElementById('aboutBtn');
 
     function updateCount() {
         chrome.storage.local.get(STORAGE_KEY, function(result) {
@@ -66,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateCount();
             });
         }
+    });
+
+    aboutBtn.addEventListener('click', function() {
+        window.open('about.html', '_blank');
     });
 
     // Update count on load
