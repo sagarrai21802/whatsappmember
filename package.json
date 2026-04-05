@@ -5,7 +5,7 @@
     "build-vite": "tsc && vite build",
     "build": "yarn build-vite && yarn minify && build-readme README.md"
   },
-  "author": "",
+  "author": "Sagar Rai",
   "license": "MIT",
   "dependencies": {
     "@ikerin/build-readme": "^1.1.1",
